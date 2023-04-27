@@ -1,0 +1,4 @@
+geladeira:crb45:plantnum:eletro:consul:f5:12
+gfewtg:gwe:gwe:eletro:gew:we:45
+DW:DSA:DSA:ELETRO:DSA:DSF:45
+geladeira:cdr45:prata:eletrodomesticos:brastempo:f4:45
