@@ -1,5 +1,8 @@
 #ignorar a pasta do vscode
 .vscode/
 
-#ignrar o executável do programa
+#ignorar a pasto do executável do programa
 output/
+
+#ignorar arquivos exe
+*.exe
