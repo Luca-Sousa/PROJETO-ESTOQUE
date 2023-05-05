@@ -9,7 +9,7 @@ void pesquisarFuncionario()
 {
   FILE *arq;
   char linha[100], *busca, pesquisa[60];
-  char nome[60], cpf[12], tel[20], email[30], fil[20], rua[50], num[10],
+  char cod_func[8], nome[60], cpf[12], tel[20], email[30], fil[20], rua[50], num[10],
       bairro[50], cid[50], est[50], comp[100];
   int idade, op;
 
@@ -42,6 +42,11 @@ void pesquisarFuncionario()
     if (strstr(linha, pesquisa) != NULL)
     {
       busca = strtok(linha, ":");
+      if (busca != NULL)
+      {
+        strcpy(cod_func, busca);
+        busca = strtok(NULL, ":");
+      }
       if (busca != NULL)
       {
         strcpy(nome, busca);
@@ -110,6 +115,7 @@ void pesquisarFuncionario()
 
       printf("-----------------------------------------------------------------"
              "-----------------------------------------\n");
+      printf("| CODIGO: %s  \n", cod_func);
       printf("| NOME: %s  \n", nome);
       printf("| CPF: %s  \n", cpf);
       printf("| IDADE: %d \n", idade);
@@ -128,8 +134,16 @@ void pesquisarFuncionario()
     }
   }
 
+  char p;
+  printf("CONTINUAR PESQUISANDO? S OU N");
+  scanf("%s", &p);
+  if ((p == 'S') || (p == 's'))
+  {
+    pesquisarFuncionario();
+  }
   fclose(arq);
 }
+
 void pesquisarFilial()
 {
   FILE *arq;
