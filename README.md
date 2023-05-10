@@ -3,4 +3,4 @@
 
 ## Diagrama do Projeto
 
-https://github.com/Luca-Sousa/PROJETO-ESTOQUE/blob/master/diagrama.pdf
+!https://github.com/Luca-Sousa/PROJETO-ESTOQUE/blob/master/diagrama.pdf
