@@ -47,9 +47,12 @@ int alterarLinha(char *nome_arquivo, int num_linha, char *nova_linha)
   for (i = 0; i < num_linhas; i++)
   {
     fputs(linhas[i], arquivo);
-    fprintf(arquivo, "\n");
+    if (num_linha == 1)
+    {
+      fprintf(arquivo, "\n");
+    }
   }
-  fprintf(arquivo, "\n");
+  // fprintf(arquivo, "\n");
 
   fclose(arquivo);
 
