@@ -239,7 +239,7 @@ void pesquisarFilial()
 void pesquisarProduto()
 {
   FILE *arq;
-  char linha[100], *busca, pesquisa[60], nomearq[30];
+  char *cod_prod[8], linha[100], *busca, pesquisa[60], nomearq[30];
   char nome[60], ref[20], cor[30], dep[15], forn[25], fil[20];
   int qtde, opesq, op;
 
@@ -312,6 +312,11 @@ void pesquisarProduto()
       busca = strtok(linha, ":");
       if (busca != NULL)
       {
+        strcpy(cod_prod, busca);
+        busca = strtok(NULL, ":");
+      }
+      if (busca != NULL)
+      {
         strcpy(nome, busca);
         busca = strtok(NULL, ":");
       }
@@ -350,6 +355,7 @@ void pesquisarProduto()
       }
       printf("-----------------------------------------------------------------"
              "-----------------------------------------\n\n");
+      printf("| CODIGO: %s  \n", cod_prod);
       printf("| NOME: %s  \n", nome);
       printf("| REFERENCIA: %s  \n", ref);
       printf("| COR: %s  \n", cor);

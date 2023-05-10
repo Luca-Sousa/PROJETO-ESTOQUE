@@ -159,6 +159,7 @@ int verificarCodigo(char *cod_func)
   {
 
     printf("ERRO!! Nao foi encontrado funcionario com esse codigo\n");
+    return -1;
   }
 
   fclose(aquivo);
@@ -273,7 +274,7 @@ void alterarFuncionario()
   char novaLinha[MAX_LINE_SIZE];
   novaLinha[0] = '\0';
 
-  if (linhaEncontrada != NULL)
+  if (num_linha >= 0)
   {
 
     opcoesAlterar();
@@ -310,6 +311,10 @@ void alterarFuncionario()
         "funcionarios/arqfunc.txt",
         num_linha + 1,
         novaLinha);
+  }
+  else
+  {
+    alterarFuncionario();
   }
 }
 

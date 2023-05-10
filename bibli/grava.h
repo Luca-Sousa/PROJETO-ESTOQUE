@@ -27,6 +27,7 @@ void gravaProduto(pprod fcad)
 {
   FILE *arq_gra;
   char *dep = fcad->dep_prod;
+  char *cod_prod = uuid(8);
 
   if (strcmp(dep, "MOVEIS") == 0 || strcmp(dep, "moveis") == 0 ||
       strcmp(dep, "Moveis") == 0)
@@ -40,7 +41,7 @@ void gravaProduto(pprod fcad)
     {
       printf("\n\nCADASTRO CONCLUIDO!\n\n");
     }
-    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%d", fcad->nome_prod, fcad->ref_prod,
+    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%s:%d", cod_prod, fcad->nome_prod, fcad->ref_prod,
             fcad->cor_prod, fcad->dep_prod, fcad->forn_prod, fcad->fil_prod,
             fcad->qtde_prod);
     fprintf(arq_gra, "\n");
@@ -61,7 +62,7 @@ void gravaProduto(pprod fcad)
     {
       printf("\n\nCADASTRO CONCLUIDO!\n\n");
     }
-    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%d", fcad->nome_prod, fcad->ref_prod,
+    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%s:%d", cod_prod, fcad->nome_prod, fcad->ref_prod,
             fcad->cor_prod, fcad->dep_prod, fcad->forn_prod, fcad->fil_prod,
             fcad->qtde_prod);
     fprintf(arq_gra, "\n");
@@ -80,7 +81,8 @@ void gravaProduto(pprod fcad)
     {
       printf("\n\nCADASTRO CONCLUIDO!\n\n");
     }
-    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%d", fcad->nome_prod, fcad->ref_prod,
+
+    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%s:%d", cod_prod, fcad->nome_prod, fcad->ref_prod,
             fcad->cor_prod, fcad->dep_prod, fcad->forn_prod, fcad->fil_prod,
             fcad->qtde_prod);
     fprintf(arq_gra, "\n");
@@ -98,7 +100,7 @@ void gravaProduto(pprod fcad)
     {
       printf("\n\nCADASTRO CONCLUIDO!\n\n");
     }
-    fprintf(arq_gra, "%s:%s:%s:%s:%s%s:%d", fcad->nome_prod, fcad->ref_prod,
+    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s%s:%d", cod_prod, fcad->nome_prod, fcad->ref_prod,
             fcad->cor_prod, fcad->dep_prod, fcad->forn_prod, fcad->fil_prod,
             fcad->qtde_prod);
     fprintf(arq_gra, "\n");
