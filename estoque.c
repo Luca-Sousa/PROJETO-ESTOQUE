@@ -15,7 +15,7 @@ void menuInicio();
 int main(void)
 {
     menuInicio();
-    return 0;
+    return 0;   
 }
 
 // funcao de menu e tela de inicio
@@ -29,7 +29,7 @@ void menuInicio()
 
     do
     {
-        system("cls");
+       system("cls");
         printf("-------------------------------------------------------------------------------------\n");
         printf("|                                ESTOQUE SEM ESTOQUE                                |\n");
         printf("-------------------------------------------------------------------------------------\n");

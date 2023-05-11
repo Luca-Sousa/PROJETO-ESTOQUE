@@ -1,4 +1,4 @@
-geladeira:crb45:plantnum:eletro:consul:f5:12
-gfewtg:gwe:gwe:eletro:gew:we:45
-DW:DSA:DSA:ELETRO:DSA:DSF:45
-geladeira:cdr45:prata:eletrodomesticos:brastempo:f4:45
+98489361:geladeira:crb45:plantnum:eletro:consul:f5:12
+15947784:gfewtg:gwe:gwe:eletro:gew:we:45
+95483267:DW:DSA:DSA:ELETRO:DSA:DSF:45
+25849761:geladeira:cdr45:prata:eletrodomesticos:brastempo:f4:45

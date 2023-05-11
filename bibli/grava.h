@@ -1,4 +1,5 @@
 #include "../utils/uuid.c"
+#include "structs.h"
 
 #ifndef GRAVA_H_INCLUDED
 #define GRAVA_H_INCLUDED
@@ -6,6 +7,7 @@
 // grava no arquivo dados da Filial
 void gravaFilial(pfil fcad)
 {
+  char *cod_fil = uuid(8);
   FILE *arq_gra;
   arq_gra = fopen("filiais/arqfiliais.txt", "a");
   if (arq_gra == NULL)
@@ -16,7 +18,7 @@ void gravaFilial(pfil fcad)
   {
     printf("\n\nCADASTRO CONCLUIDO!\n\n");
   }
-  fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%s", fcad->nome_fil, fcad->rua_fil,
+  fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%s:%s",cod_fil, fcad->nome_fil, fcad->rua_fil,
           fcad->num_fil, fcad->bairro_fil, fcad->cid_fil, fcad->est_fil,
           fcad->comp_fil);
   fprintf(arq_gra, "\n");
@@ -100,7 +102,7 @@ void gravaProduto(pprod fcad)
     {
       printf("\n\nCADASTRO CONCLUIDO!\n\n");
     }
-    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s%s:%d", cod_prod, fcad->nome_prod, fcad->ref_prod,
+    fprintf(arq_gra, "%s:%s:%s:%s:%s:%s:%s:%d", cod_prod, fcad->nome_prod, fcad->ref_prod,
             fcad->cor_prod, fcad->dep_prod, fcad->forn_prod, fcad->fil_prod,
             fcad->qtde_prod);
     fprintf(arq_gra, "\n");

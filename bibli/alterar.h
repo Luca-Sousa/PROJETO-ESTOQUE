@@ -127,7 +127,7 @@ int verificarCodigo(char *cod_func)
   if (aquivo == NULL)
   {
     printf("Erro ao abrir o arquivo: %s\n", arquivoDir);
-    return;
+    return 0;
   }
 
   char linha[MAX_LINE_SIZE];
@@ -144,7 +144,7 @@ int verificarCodigo(char *cod_func)
     }
     strncpy(codigo, linha, 8);
     codigo[8] = '\0';
-    // printf("CODIGOS: %s\n", codigo);
+     //printf("CODIGOS: %s\n", codigo);
     if (strcmp(codigo, cod_func) == 0)
     {
       listFuncByCode(linha, 1);
@@ -304,9 +304,7 @@ void alterarFuncionario()
     strcat(novaLinha, estado);
     strcat(novaLinha, ":");
     strcat(novaLinha, complemento);
-
-    printf("%s\n", novaLinha);
-
+    strcat(novaLinha, "\n");
     alterarLinha(
         "funcionarios/arqfunc.txt",
         num_linha + 1,

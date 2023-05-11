@@ -1,9 +1,6 @@
-guarda roupa:ph1720:branca:moveis:herval:12914488
-gola polo oklay:gg40:preta:moda:oklay:matriz:62
-sapato vizzano :vizz32:marrom:calcados:vizzano:matriz:50
-freezer:chb30:cinza:eletro:consul:filial 5:5
-sapato:ewdw:preto:moda:jax:f1:78
-colchao:ajsa:amendoa:moveis:herval:f5:2
-few:dsa:dsa:ds:dsa:sasad:12845248
-comoda:frwh:freijo/off white:MOVEIS:albatroz:FILIAL 5:12
-EFWEF:FDSFSA:DSFSDAFS:MOVEIS:FDSAFSA:WEFEW:45
+98451361:guarda roupa:ph1720:branca:moveis:herval:12914488
+15935784:gola polo oklay:gg40:preta:moda:oklay:matriz:62
+45873129:sapato vizzano :vizz32:marrom:calcados:vizzano:matriz:50
+95483267:freezer:chb30:cinza:eletro:consul:filial 5:5
+64852154:sapato:ewdw:preto:moda:jax:f1:78
+54246864:cozinha tuboarte:coztub2:marrom:moveis:tuboarte:filial 5:20

@@ -1,12 +1,5 @@
-filial eletro:napoleao de macedo:210:monte castelo:ubajara:ce:prox ao enio
-filial moveis:tenente ramiro:144:vila nova:tiangua:pi:prox ao estadio
-filial vendas:joao luiz:222:rodoviaria:ibiapina:ce:atras do beco
-filial placa solar:napoleao de ramiro:666:monte soares:ubajara
-DEPOSITO 5:JOSEFINO PERDIGAO:546:MONTE GRANDE:UBAJARA:CE:PROXIMA A FABRICA NOVA
-DEPOSITO DE PLACA:ESMERINDO RIBEIRO:789:GRAN RIO:IBIAPINA:PI:PROXIMO A CHURRASCARIA BOI MANSO
-hiper:av euifrasio:122:centro:ubajra:ce:proximo ao sinal
-dwsa:das:dsa:das:dsa:dsa:sdas
-sdsf:sklkl:klk:lkl:klk:klkl:lklklklklk
-ghghg:ghghghghg:ghgh:hghg:hghghggh:hg:hghghgh
-DASDAS:DSADA:DASD:ASDAS:DASD:SD:ASDASDSA
-ASDFDSG:JHG:JHGJ:HGJGH:JHGJ:GHJHG:HGJHG
+13245654:filial eletro:napoleao de macedo:210:monte castelo:ubajara:ce:prox ao enio
+15478241:filial moveis:tenente ramiro:144:vila nova:tiangua:pi:prox ao estadio
+68457982:filial vendas:joao luiz:222:rodoviaria:ibiapina:ce:atras do beco
+32846519:DEPOSITO 5:JOSEFINO PERDIGAO:546:MONTE GRANDE:UBAJARA:CE:PROXIMA A FABRICA NOVA
+17331280:filia xontre:fgfgfg:478:ewewew:popop:vc:ccxvznbtrg
