@@ -6,3 +6,6 @@ output/
 
 #ignorar arquivos exe
 *.exe
+
+#ignorar arquivos .o
+*.o
