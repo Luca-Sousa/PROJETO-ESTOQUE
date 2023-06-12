@@ -134,7 +134,7 @@ int verificarCodigo(char *cod_func)
   char codigo[9];
   int match = 0;
 
-  int c = NULL;
+  int c = 0;
   while (fgets(linha, MAX_LINE_SIZE, aquivo) != NULL)
   {
     char *pos = strchr(linha, '\n');
@@ -266,7 +266,7 @@ void alterarFuncionario()
   scanf(" %[^\n]s", cod_func);
 
   int num_linha = verificarCodigo(cod_func);
-  if (num_linha != NULL)
+  if (num_linha >= 0)
   {
     printf("numero da linha:  %d\n", num_linha);
   }
