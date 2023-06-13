@@ -7,6 +7,7 @@
 #include "bibli/grava.h"
 #include "bibli/pesquisa.h"
 #include "bibli/alterar.h"
+#include "bibli/excluir.h"
 
 // chamada do prototipo da funcao menu
 void menuInicio();
@@ -15,7 +16,7 @@ void menuInicio();
 int main(void)
 {
     menuInicio();
-    return 0;   
+    return 0;
 }
 
 // funcao de menu e tela de inicio
@@ -29,12 +30,12 @@ void menuInicio()
 
     do
     {
-       system("cls");
-        printf("-------------------------------------------------------------------------------------\n");
-        printf("|                                ESTOQUE SEM ESTOQUE                                |\n");
-        printf("-------------------------------------------------------------------------------------\n");
-        printf("| [1]TRANSFERIR [2]PESQUISAR [3]ALTERAR [4]CADASTRAR [5]EXCLUIR [9]FECHAR [0]LOGIN  |\n");
-        printf("-------------------------------------------------------------------------------------\n\n");
+        system("cls");
+        printf("-----------------------------------------------------------------------\n");
+        printf("|                           ESTOQUE SEM ESTOQUE                       |\n");
+        printf("-----------------------------------------------------------------------\n");
+        printf("| [2]PESQUISAR [3]ALTERAR [4]CADASTRAR [5]EXCLUIR [9]FECHAR [0]LOGIN  |\n");
+        printf("-----------------------------------------------------------------------\n\n");
         printf("O QUE DESEJA FAZER? : ");
         scanf("%d", &op);
         system("cls");
@@ -227,6 +228,35 @@ void menuInicio()
             printf("-------------------------------------------\n");
             printf("| [1]FILIAL   [2]FUNCIONARIO  [3]PRODUTO  |\n");
             printf("-------------------------------------------\n\n");
+            printf("QUAL OPCAO DESEJA EXCLUIR?");
+            printf("\n>>");
+            scanf("%d", &op1);
+            system("cls");
+            switch (op1)
+            {
+            case 1:
+                break;
+
+            case 2:
+                excluirFuncionario();
+                printf("DESEJA CONTINUAR?\nS OU N: ");
+                scanf("%s", &opcao);
+                printf("\n");
+                if ((opcao == 's') || (opcao == 'S'))
+                {
+                    op = 0;
+                }
+                else
+                {
+                    op = -1;
+                    printf("\n\nSISTEMA ENCERRADO!");
+                }
+                printf("\n");
+                break;
+
+            case 3:
+                break;
+            }
             break;
         case 9:
 

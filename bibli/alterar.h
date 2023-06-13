@@ -144,7 +144,7 @@ int verificarCodigo(char *cod_func)
     }
     strncpy(codigo, linha, 8);
     codigo[8] = '\0';
-     //printf("CODIGOS: %s\n", codigo);
+    // printf("CODIGOS: %s\n", codigo);
     if (strcmp(codigo, cod_func) == 0)
     {
       listFuncByCode(linha, 1);
