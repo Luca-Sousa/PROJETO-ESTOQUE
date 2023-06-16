@@ -235,6 +235,20 @@ void menuInicio()
             switch (op1)
             {
             case 1:
+                excluirFilial();
+                printf("DESEJA CONTINUAR?\nS OU N: ");
+                scanf("%s", &opcao);
+                printf("\n");
+                if ((opcao == 's') || (opcao == 'S'))
+                {
+                    op = 0;
+                }
+                else
+                {
+                    op = -1;
+                    printf("\n\nSISTEMA ENCERRADO!");
+                }
+                printf("\n");
                 break;
 
             case 2:
