@@ -142,8 +142,10 @@ int verificarCodigo1(char *cod_func)
     {
       *pos = '\0';
     }
+
     strncpy(codigo, linha, 8);
     codigo[8] = '\0';
+
     // printf("CODIGOS: %s\n", codigo);
     if (strcmp(codigo, cod_func) == 0)
     {
@@ -153,8 +155,10 @@ int verificarCodigo1(char *cod_func)
       return c;
       break;
     }
+  
     c++;
   }
+
   if (match == 0)
   {
 
@@ -180,9 +184,9 @@ void excluirFuncionario()
 
   if (num_linha >= 0)
   {
-    printf("%d", num_linha);
-    excluirLinha(num_linha + 1, "funcionarios/arqfunc.txt");
-    // printf("FUNCIONARIO EXCLUIDO!!");
+    num_linha++;
+    excluirLinha(num_linha, "funcionarios/arqfunc.txt");
+    printf("FUNCIONARIO EXCLUIDO!!\n\n");
   }
 }
 

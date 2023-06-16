@@ -42,17 +42,35 @@ void excluirLinha(int num_linha, char *arquivo)
   fclose(arquivoOriginal);
   fclose(arquivoTemporario);
 
-  // Excluir o arquivo original
-  remove(arquivo);
+  // Reabrir o arquivo original em modo escrita
+  arquivoOriginal = fopen(arquivo, "w");
+  if (arquivoOriginal == NULL)
+  {
+    printf("Erro ao abrir o arquivo.\n");
+    return;
+  }
 
-  // Renomear o arquivo temporário para o nome do arquivo original
-  rename("temp.txt", arquivo);
+  // Reabrir o arquivo temporário em modo leitura
+  arquivoTemporario = fopen("temp.txt", "r");
+  if (arquivoTemporario == NULL)
+  {
+    printf("Erro ao abrir o arquivo temporario.\n");
+    fclose(arquivoOriginal);
+    return;
+  }
 
-  printf("Linha excluida com sucesso.\n");
-}
+  // Copiar o conteúdo do arquivo temporário para o arquivo original
+  while (fgets(linha, sizeof(linha), arquivoTemporario))
+  {
+    fputs(linha, arquivoOriginal);
+  }
 
-int main()
-{
-  excluirLinha(1, "../funcionarios/arqfunc.txt");
-  return 0;
+  // Fechar os arquivos novamente
+  fclose(arquivoOriginal);
+  fclose(arquivoTemporario);
+
+  // Remover o arquivo temporário
+  remove("temp.txt");
+
+  printf("\nLinha excluida com sucesso.\n");
 }
