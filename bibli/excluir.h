@@ -11,6 +11,8 @@
 #include "../utils/listFilByCodeExcluir.c"
 #include "../utils/listFuncByCodeExcluir.c"
 
+/* ------------------------ FUNCIONARIO ------------------------------- */
+
 int verificarCodigoFunc(char *cod_func)
 {
   char arquivoDir[] = "funcionarios/arqfunc.txt";
@@ -81,7 +83,7 @@ void excluirFuncionario()
   }
 }
 
-//-------------------------------------------------------------------------------------------------//
+/* --------------------------- FILIAL ------------------------------- */
 
 int verificarCodigoFil(char *cod_fil)
 {
@@ -93,7 +95,7 @@ int verificarCodigoFil(char *cod_fil)
     printf("Erro ao abrir o arquivo: %s\n", arquivoDir);
     return 0;
   }
-
+  
   char linha[MAX_LINE_SIZE];
   char codigo[9];
   int match = 0;

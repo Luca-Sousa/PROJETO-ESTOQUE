@@ -31,11 +31,11 @@ void menuInicio()
     do
     {
         system("cls");
-        printf("-----------------------------------------------------------------------\n");
-        printf("|                           ESTOQUE SEM ESTOQUE                       |\n");
-        printf("-----------------------------------------------------------------------\n");
-        printf("| [2]PESQUISAR [3]ALTERAR [4]CADASTRAR [5]EXCLUIR [9]FECHAR [0]LOGIN  |\n");
-        printf("-----------------------------------------------------------------------\n\n");
+        printf("----------------------------------------------------------------\n");
+        printf("|                       ESTOQUE SEM ESTOQUE                    |\n");
+        printf("----------------------------------------------------------------\n");
+        printf("| [1]PESQUISAR [2]ALTERAR [3]CADASTRAR [4]EXCLUIR [0]FECHAR    |\n");
+        printf("----------------------------------------------------------------\n\n");
         printf("O QUE DESEJA FAZER? : ");
         scanf("%d", &op);
         system("cls");
@@ -43,8 +43,6 @@ void menuInicio()
         switch (op)
         {
         case 1:
-            break;
-        case 2:
             printf("-------------------------------------------------------------------------\n");
             printf("|                           OPCOES DE PESQUISA                          |\n");
             printf("-------------------------------------------------------------------------\n");
@@ -105,7 +103,7 @@ void menuInicio()
                 printf("\n");
             }
             break;
-        case 3:
+        case 2:
             printf("-------------------------------------------------------------------------\n");
             printf("|                           OPCOES DE ALTERACAO                          |\n");
             printf("-------------------------------------------------------------------------\n");
@@ -119,6 +117,20 @@ void menuInicio()
             switch (op1)
             {
             case 1:
+                alterarFilial();
+                printf("DESEJA CONTINUAR?\nS OU N: ");
+                scanf("%s", &opcao);
+                printf("\n");
+                if ((opcao == 's') || (opcao == 'S'))
+                {
+                    op = 0;
+                }
+                else
+                {
+                    op = -1;
+                    printf("\n\nSISTEMA ENCERRADO!");
+                }
+                printf("\n");
                 break;
             case 2:
                 alterarFuncionario();
@@ -141,7 +153,7 @@ void menuInicio()
             }
 
             break;
-        case 4:
+        case 3:
             printf("-------------------------------------------\n");
             printf("|           OPCOES DE CADASTRO            |\n");
             printf("-------------------------------------------\n");
@@ -222,7 +234,7 @@ void menuInicio()
                 break;
             }
             break;
-        case 5:
+        case 4:
             printf("-------------------------------------------\n");
             printf("|           OPCOES PARA EXCLUIR           |\n");
             printf("-------------------------------------------\n");
@@ -272,13 +284,10 @@ void menuInicio()
                 break;
             }
             break;
-        case 9:
+        case 0:
 
             op = -1;
             printf("SISTEMA ENCERRADO!");
-            break;
-        case 0:
-
             break;
         default:
             printf("DESEJA TENTAR NOVAMENTE?\nS OU N: ");
