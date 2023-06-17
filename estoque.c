@@ -104,11 +104,11 @@ void menuInicio()
             }
             break;
         case 2:
-            printf("-------------------------------------------------------------------------\n");
-            printf("|                           OPCOES DE ALTERACAO                          |\n");
-            printf("-------------------------------------------------------------------------\n");
+            printf("-------------------------------------------------------------------\n");
+            printf("|                       OPCOES DE ALTERACAO                       |\n");
+            printf("-------------------------------------------------------------------\n");
             printf("| [1]ALTERAR FILIAL   [2]ALTERAR FUNCIONARIO  [3]ALTERAR PRODUTO  |\n");
-            printf("-------------------------------------------------------------------------\n\n");
+            printf("-------------------------------------------------------------------\n\n");
             printf("QUAL OPCAO DESEJA ALTERAR?");
             printf("\n>>");
             scanf("%d", &op1);
@@ -149,6 +149,20 @@ void menuInicio()
                 printf("\n");
                 break;
             case 3:
+                alterarProduto();
+                printf("DESEJA CONTINUAR?\nS OU N: ");
+                scanf("%s", &opcao);
+                printf("\n");
+                if ((opcao == 's') || (opcao == 'S'))
+                {
+                    op = 0;
+                }
+                else
+                {
+                    op = -1;
+                    printf("\n\nSISTEMA ENCERRADO!");
+                }
+                printf("\n");
                 break;
             }
 
@@ -281,6 +295,20 @@ void menuInicio()
                 break;
 
             case 3:
+                excluirProduto();
+                printf("DESEJA CONTINUAR?\nS OU N: ");
+                scanf("%s", &opcao);
+                printf("\n");
+                if ((opcao == 's') || (opcao == 'S'))
+                {
+                    op = 0;
+                }
+                else
+                {
+                    op = -1;
+                    printf("\n\nSISTEMA ENCERRADO!");
+                }
+                printf("\n");
                 break;
             }
             break;
